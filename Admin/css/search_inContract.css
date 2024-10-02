@@ -1,0 +1,211 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.container{
+    background-color: #48A14D;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.inner-container {
+    width: 670px;
+    height: 70vh; 
+    background: linear-gradient(to top, #F5F5F5, #000000);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px #000000;
+    display: block;  
+    margin: auto;
+}
+.column-one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-7rem);
+    margin: auto;
+}
+.column-one ul{
+    list-style-type: none;
+}
+.column-one ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 218, 218);
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+    font-weight: 1000;
+    font-family: system-ui;
+    box-shadow: 5px 5px 5px 0 #000000;
+}
+.column-two {
+    display: flex;
+    align-items: center;
+    transform: translateY(-8rem);
+    justify-content: center; 
+    width: 100%; 
+}
+
+.left-column, .right-column {
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.left-column ul, .right-column ul, .left-column li, .right-column li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.left-column p, .right-column p{
+    width: 310px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    font-family: system-ui;
+    font-weight: 800;
+    box-shadow: 5px 5px 5px 0 #000000;
+    border-radius: 10px;    
+} 
+.left-column p{
+    background: linear-gradient(to top, #48A14D, #15c01d, #48A14D);
+    color: #000000;
+}
+.right-column p{
+    background: linear-gradient(to top, #a14848, #c01515, #a14848);
+    color: #000000;
+}
+.left-column li, .right-column li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    font-family: system-ui;
+    font-weight: 800;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px 0 #000000;
+} 
+.logo-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-5rem);
+}
+.logo-container img{
+    width: 200px;
+    height: 200px;
+}
+a{
+    position: fixed;
+    transform: translate(-20rem, -12rem);
+}
+a img{
+    transition: 0.5s;
+}
+a:hover img{
+    transform: scale(1.1);
+}
+.button-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-5rem);
+}
+.button-icons a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-3px,0rem);
+}
+.button-icons button{
+   background: none; 
+    border-style: none;
+}
+a img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.deleteButton img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.deleteButton{
+    transform: translateX(-5rem);
+}
+.contract-Button{
+    transform: translateX(5rem);
+}
+.deleteButton:hover img{
+    box-shadow: 0 0 15px 10px #ff0000;
+    transform: scale(1.1);
+}
+.contract-Button:hover img{
+    box-shadow: 0 0 15px 10px #000000;
+}
+.popup-content{
+    width: 690px;
+    font-size: 20px;
+    color: #ff0000;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.8), #000000);
+    transform: translateX(37px);
+}
+.popup {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    transform: translate(-2.3rem);
+    z-index: 1; 
+    left: 0;
+    top: 0;
+   width: 100%;
+    height: 100%;
+}
+#yesButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: #000000;
+    color: #F5F5F5;
+    transform: translate(-3.5rem, -2px);
+    transition: 0.5s;
+}
+#yesButton:hover{
+    box-shadow: 0 0 5px 5px #ff0000;
+}
+#noButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: #000000;
+    color: #F5F5F5;
+    transform: translate(3.5rem, -2.6rem);
+    transition: 0.5s;
+}
+#noButton:hover{
+    box-shadow: 0 0 5px 5px green;
+}

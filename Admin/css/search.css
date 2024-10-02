@@ -1,0 +1,208 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+.container{
+    background-color: #48A14D;
+    width: 100%;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 10px 30px;
+}
+.inner-container {
+    width: 670px;
+    height: 80vh; 
+    background: linear-gradient(to top, #F5F5F5, #000000);
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px #000000;
+    display: flex;  
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    margin: auto;
+}
+.info-container{
+    transform: translateY(-4rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.column-one, .column-two {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.column-two {
+    margin-right: 55px;
+}
+.info-container ul{
+    list-style-type: none;
+}
+.info-container ul li {
+    padding: 5px 0;    
+}
+.info-container ul li p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 280px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    background-color: #F5F5F5;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin: 10px 0;
+}
+.logo-container{
+    transform: translateY(4rem);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.logo-container img{
+    width: 200px;
+    height: 100%;
+}
+a{
+    position: relative;
+    transform: translate(-250px, -100px);
+}
+a img{
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
+}
+a:hover img{
+    transform: scale(1.1);
+}
+.button-icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translateY(-5rem);
+}
+.button-icons a{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: translate(-3px,0rem);
+}
+.button-icons button{
+    width: 80px;
+    height: 100%;
+    background: none;
+    border-style: none;
+}
+.button-icons button img{
+    width: 80px;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.deleteButton{
+    transform: translateX(-5rem);
+}
+.edit-Button{
+    transform: translateX(5rem);
+}
+.deleteButton:hover img{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px #ff0000;
+}
+.edit-Button:hover img{
+    transform: scale(1.1);
+    box-shadow: 0 0 15px 10px #27a600;
+}
+.no-result{
+    background-color: #48A14D;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.noResult-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+    background: linear-gradient(to top, #F5F5F5, #000000);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 #000000;
+}
+.noResult-container p{
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
+.noResult-container a{
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+}
+.popup-content{
+    width: 690px;
+    font-size: 20px;
+    color: #ff0000;
+    background: linear-gradient(to top, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.8), #000000);
+    transform: translateX(37px);
+}
+.popup {
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: fixed;
+    transform: translate(-2.3rem);
+    z-index: 1; 
+    left: 0;
+    top: 0;
+   width: 100%;
+    height: 100%;
+}
+#yesButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: #000000;
+    color: #F5F5F5;
+    transform: translate(-3.5rem, -2px);
+    transition: 0.5s;
+}
+#yesButton:hover{
+    box-shadow: 0 0 5px 5px #ff0000;
+}
+#noButton{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: hidden;
+    background-color: #000000;
+    color: #F5F5F5;
+    transform: translate(3.5rem, -2.6rem);
+    transition: 0.5s;
+}
+#noButton:hover{
+    box-shadow: 0 0 5px 5px green;
+}

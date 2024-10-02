@@ -1,0 +1,94 @@
+body{
+    margin: auto;
+    padding: 0;
+    height: 100vh;
+    font-family: system-ui;
+    display: flex;
+    background-color: #48A14D;
+    overflow: hidden;
+}
+.outer-container{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+.inner-container{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h1-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+    width: 300px;
+}
+.h1-div h1 {
+    margin-bottom: -10px;
+}
+.h1-div h1,.h1-div  h2{
+    font-size: 40px;
+    padding-left: 30px;
+}
+.inner-container a{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(-45rem, -19rem);
+}
+.inner-container a img{
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+}
+a:hover img{
+    transform: scale(1.1);
+}
+.expired-contract{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.expired-contract::-webkit-scrollbar {
+    display: none;
+}
+.expired-contract ul{
+    list-style-type: none;
+}
+.expired-contract img{
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+.expired-contract ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+    background-color: #ffffff;
+    margin: 20px 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 300px;
+    height: 30vh;
+}
+.expired-contract p{
+    transform: translateY(-3rem);
+}

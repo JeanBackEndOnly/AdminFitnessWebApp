@@ -1,0 +1,127 @@
+body{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #48A14D;
+}
+.outer-container{
+    display: flex;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+} 
+.inner-container{
+    display: flex;
+    margin: auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    width: 620px;
+    height: 550px;
+    background: linear-gradient(to top, #F5F5F5, #000000);
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0 #000000;
+    flex-direction: column;
+}
+.inner-container img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.back-button{
+    display: flex;
+    position: absolute;
+    transform: translate(-7rem, -6rem);
+}
+.back-button img{
+    width: 80px;
+    height: 80px;
+    transition: 0.5s;
+}
+.back-button:hover img{
+    width: 90px;
+    height: 90px;
+    margin: -5px -5px;
+}
+.form-columns{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    width: 100%;
+    padding: 10px 0;
+}
+.column-one, .column-two{
+    transform: translateY(-1.5rem);
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.form-columns input{
+    height: 30px;
+    width: 240px;
+    margin-top: 20px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: #F5F5F5;
+    font-weight: bold;
+}
+.button-update{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button-update button{
+    font-weight: 1000;
+    background-color: #48A14D;
+    height: 60px;
+    width: 200px;
+    border-radius: 10px;
+    border-style: hidden;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    transform: translateY(-0.5rem);
+    cursor: pointer;
+    box-shadow: 5px 5px 5px 0 #000000;
+    transition: 0.5s;
+}
+.button-update:hover button{
+    transform: scale(1.1);
+    box-shadow: -5px -5px 5px 0 #000000;
+}
+.button-update:active button{
+    transform: scale(0.5.0.5);
+    box-shadow: -5px -5px 5px 0 #000000;
+}
+.success-popup{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-15rem);
+    color: rgb(0, 255, 0);
+    font-size: 20px;
+    font-weight: 1000;
+    background: linear-gradient(to top, rgba(72, 161, 77, 0.9), rgba(0,0,0,0.9));
+    padding: 20px 0;
+}
+.success-popup p{
+    width: 620px;
+    
+}
+.error-popup{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    transform: translateY(-2.5rem);
+    color: rgb(255, 0, 0);
+}
+.error-popup p{
+    width: 200px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 1000;
+}
